@@ -56,6 +56,55 @@
   padding: 20px;
   text-align: center;
 }
+
+
+
+/* Just a parent container for the videos */
+    .videos {
+      margin: 20px auto;
+      max-width: 700px;
+    }
+    /* Individual video container */
+    .video-wrap {
+      position: relative;
+      max-width: 700px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    /* video poster frame or placeholder image */
+    .video-wrap .placeholder {
+      max-width: 100px;
+      width: 100%;
+    }
+    /* SVG play button container */
+    .video-wrap .play-btn {
+      position: absolute;
+      max-width: 700px;
+      width: 100px;
+      height: 100px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .video-wrap .play-btn svg {
+      transition: all .2s ease;
+      fill: #fff;
+    }
+    .video-wrap .play-btn:hover svg,
+    .video-wrap .play-btn:focus svg {
+      cursor: pointer;
+      fill: #17e617;
+    }
+    /* adjust your icon size, add different breakpoints as needed */
+    @media screen and (max-width: 600px) {
+      .video-wrap .play-btn {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+
+
 </style>
 
 </head>
@@ -76,10 +125,10 @@
                         <a class="nav-link headerachor" href="Education.html">Gameplay Video</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link headerachor" target="_blank" href="https://drive.google.com/file/d/1fS0JUDuO-f8E-PtmtMrop4S1ezyH7MKh/view?usp=sharing">Technical Paper</a>
+                        <a class="nav-link headerachor" target="_blank" href="https://drive.google.com/file/d/11YMrdpVPG79sA6Bb9TGryl5sKQ_1yhSI/view?usp=sharing">Technical Paper</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link headerachor" target="_blank" href="https://drive.google.com/file/d/1HYCoduz3dlzkQJoUKSfqSdqI362BqSHC/view?usp=sharing">Project Report</a>
+                        <a class="nav-link headerachor" target="_blank" href="https://drive.google.com/file/d/1_LG_1CK16MKgdskNpjA7Wn7zA9aa3ko5/view?usp=sharing">Project Report</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link headerachor" href="contact.html">Team Members</a>
@@ -95,9 +144,20 @@
   
 	<div class="bg-text">
 	<h2> AI agent trained to win races 
-				<h5>Different players were trained by different masters. Let's see know which player wins the race and whose trainer was the best
-	
+				<h5>Different players were trained by different masters. Let's see which player wins the race and whose trainer was the best.
+				Will you be able to beat them? Want to try, click on the play button below.
+				
+	<div class="videos">
+  <div class="video-wrap">
+    <a href="https://zaiyan-cse.github.io/DeepRL_game/index.html" target="_blank">
+      <div class="play-btn"></div>
+      <img class="placeholder" src="Image/image.png" alt="My Awesome Video"/>
+    </a>
+  </div>
 </div>
+
+</div>
+
 </div>
               <!-- <div class="row column1"> -->
                 <!-- <div class="col-lg-6 col-md-6 first-image"> -->
@@ -124,7 +184,13 @@
           </section>
 
 
+		<section id=Whatido>
+			
+		
+		</section>
+
           <section id=Whatido>
+		  
             <h1> Model Architecture</h1>
               <div class = "row feature-1" style= 'padding-top: 2%;
 	padding-bottom: 0%;
@@ -182,7 +248,7 @@
 			  
               <div class="row feature-3">
                 <div class = "col-lg-6 col-md-6 Feature-third-image">
-                    <img class = "Feature-svg-image-3" src="Image/LSTM.jpeg" alt="">
+                    <img class = "Feature-svg-image-3" src="Image/lstm new.jpeg" alt="">
                   </div>
                   <div class="col-lg-6 col-md-6 feature-coding">
                     <h1 class="Feature-Heading">LSTM</h1>
